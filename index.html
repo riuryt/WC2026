@@ -5,18 +5,40 @@
   <title>World Cup 2026 AI</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h1>🏆 World Cup 2026</h1>
+<header>
+  <h1>🏆 World Cup 2026 AI</h1>
+  <p>Lịch thi đấu - Kết quả - AI dự đoán tỷ số, kèo chấp</p>
+</header>
 
-<p>AI dự đoán World Cup</p>
+<div class="menu">
+  <button onclick="showTab('lich')">Lịch thi đấu</button>
+  <button onclick="showTab('ketqua')">Kết quả</button>
+  <button onclick="showTab('ai')">🤖 AI Nhận định</button>
+</div>
 
-<button onclick="hello()">
-Test Website
-</button>
+<section id="lich" class="tab active">
+  <h2>Lịch thi đấu</h2>
+  <div id="matchList"></div>
+</section>
+
+<section id="ketqua" class="tab">
+  <h2>Kết quả</h2>
+  <div id="resultList"></div>
+</section>
+
+<section id="ai" class="tab">
+  <h2>🤖 AI phân tích trận đấu</h2>
+
+  <input id="homeTeam" placeholder="Đội 1, ví dụ: Germany">
+  <input id="awayTeam" placeholder="Đội 2, ví dụ: Curacao">
+
+  <button class="aiBtn" onclick="analyzeMatch()">AI phân tích</button>
+
+  <div id="aiResult">Nhập 2 đội rồi bấm AI phân tích.</div>
+</section>
 
 <script src="script.js"></script>
-
 </body>
 </html>
