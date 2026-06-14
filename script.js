@@ -1,4 +1,4 @@
-const API_URL = "https://TEN-WORKER-CUA-BAN.workers.dev";
+const API_URL = "https://worldcup-ai.keluulac84.workers.dev";
 
 const matches = [
   {
